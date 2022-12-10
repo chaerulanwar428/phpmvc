@@ -3,6 +3,7 @@
 class App{
     public function __construct()
     {
-        echo 'OK!';
+        $url = $this->parseURL();
+        var_dump($url);
     }
 }
