@@ -15,7 +15,7 @@ class App{
             unset($url[0]);
         }
 
-        require_once '../app/controllers' . $this->controller . '.php';
+        require_once '../app/controllers/' . $this->controller . '.php';
         $this->controller = new $this->controller;
 
         //method
@@ -29,7 +29,7 @@ class App{
 
         //params
         if(!empty($url)){
-            $this->params = arrray_values($url);
+            $this->params = array_values($url);
         }
 
         //jalankan controller & method, serta kirimkan params jka ada
