@@ -26,6 +26,13 @@ class App{
 
             }
         }
+
+        //params
+        if(!empty($url)){
+            $this->params = arrray_values($url);
+        }
+
+        
     }
 
     public function parseURL(){
