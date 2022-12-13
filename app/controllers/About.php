@@ -10,6 +10,6 @@ class About extends Controller{
     }
     public function page()
     {
-        $this->view('aboot/page');
+        $this->view('about/page');
     }
 }
