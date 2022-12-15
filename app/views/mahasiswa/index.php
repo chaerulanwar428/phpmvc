@@ -1,10 +1,15 @@
 <div class="container">
     <div class="row">
-        <div class="col-06">
+        <div class="col-lg-6">
+            <?php Flasher::flash(); ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-06">
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
-  Tambah data mahasiswa
-</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
+        Tambah data mahasiswa
+        </button>
     <h3>Daftar Mahasiswa</h3>
             <ul class="list-group">
             <?php foreach($data['mhs'] as $mhs) : ?>
