@@ -23,7 +23,7 @@ class Mahasiswa_model{
         return $this->db->single();
     }
 
-     public function tambahDataMhasiswa($data)
+     public function tambahDataMahasiswa($data)
      {
         $query = "INSERT INTO mahasiswa VALUES
         ('', :nama, :nim, :email, :jurusan)";
