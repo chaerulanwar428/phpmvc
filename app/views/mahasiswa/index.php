@@ -16,7 +16,7 @@
             <li class="list-group-item ">
                 <?= $mhs['nama'];?>
                 <a href="<?= BASEURL;?>/mahasiswa/hapus/<?= $mhs['id']?>" class="badge badge-danger float-right ml-1" onclick="return confirm('yakin?');">hapus</a>
-                <a href="<?= BASEURL;?>/mahasiswa/ubah/<?= $mhs['id']?>" class="badge badge-success float-right tampilModalUbah" data-toggle="modal" data-target="#formModal" daya-id="<?= $mhs['id'];?>">ubah</a>
+                <a data-id="<?= $mhs['id']; ?>" href="<?= BASEURL;?>/mahasiswa/ubah/<?= $mhs['id']?>" class="badge badge-success float-right tampilModalUbah" data-toggle="modal" data-target="#formModal">ubah</a>
                 <a href="<?= BASEURL;?>/mahasiswa/detail/<?= $mhs['id']?>" class="badge badge-primary float-right ml-5">detail</a>
             </li>
             </ul>
