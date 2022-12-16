@@ -6,6 +6,7 @@ $(function () {
   $('.tampilModalUbah').on('click', function () {
     $('#modalLabel').html('Form Ubah Data Mahasiswa');
     $('.modal-footer button[type=submit]').html('Ubah Data');
+    $('.modal-body form').attr('action', 'http://localhost/phpmvc/public/mahasiswa/ubah');
 
     const id = $(this).data('id');
 
